@@ -1,0 +1,43 @@
+.news-wrap
+    width 100%
+    position relative
+    overflow hidden
+    &:after
+        content ""
+        background-image url("../images/aqua.png")
+        width 2200px
+        height 2600px
+        position absolute
+        top -900px
+        right -900px
+        z-index -10
+
+.news
+    padding 50px 25px
+    +adapt(980px)
+        padding 25px
+
+.news__img
+    max-width 1090px
+    margin 0 auto
+
+.container__news
+    max-width 800px
+    margin 0 auto
+    p
+        font(HN, black, 18px)
+        +adapt(1400px)
+            font-size 16px
+    h2
+        font(HN-B, black, 32px)
+    h3
+        font(HN-B, black, 20px)
+    div
+        font(HN, black, 18px)
+        +adapt(1400px)
+            font-size 16px
+.news-inside__img
+    margin 15px auto
+    width 100%
+    img 
+        width 100%
