@@ -1,0 +1,12 @@
+extends ../template
+
+block variables
+    - var title = "Новости"
+
+block content
+    .news-wrap
+        include ../common/header.pug
+
+        include ../section/news.pug
+
+        include ../common/footer.pug
