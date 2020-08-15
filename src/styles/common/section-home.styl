@@ -1,2 +1,151 @@
-.section-home
-    
+.wrapper-bckg
+    width 100%
+    position relative
+    overflow hidden
+    &:after
+        content ""
+        background-image url("../images/aqua.png")
+        width 2200px
+        height 2600px
+        position absolute
+        top -900px
+        right -900px
+        z-index -10
+        +adapt(768px)
+            top -1300px
+            right -1400px
+.first-screen
+    display flex
+    justify-content space-between
+    +adapt(768px)
+        display block
+.first-screen__info
+    width 45%
+    +adapt(768px)
+        width 100%   
+.first-screen__pic
+    width 45%
+    +adapt(768px)
+        width 100%  
+.first-screen__info-h1__title
+    font(HN-B, dark, 48px)
+    line-height 1.1
+    +adapt(1440px)
+        font-size 38px
+    +adapt(768px)
+        font-size 30px
+.first-screen__info-h2__title
+    font(HN-B, #45286F, 40px)
+    line-height 1.1
+    margin-top 50px
+    +adapt(1440px)
+        margin-top 20px
+        font-size 30px
+    +adapt(768px)
+        font-size 25px  
+.first-screen__info-description
+    margin-top 50px
+    +adapt(1440px)
+        margin-top 20px  
+    font(HN, #646464, 24px)
+    p 
+        font(HN, #646464, 24px)
+    +adapt(768px)
+        // color white
+        font-size 18px
+        p
+            // color white
+            font-size 18px
+.cart-menu
+    margin-top 200px
+    +adapt(1200px)
+        margin-top 100px
+.cart-menu__list
+    width 100%
+    display flex
+    flex-wrap wrap
+    padding 0 -1%
+    +adapt(768px)
+        justify-content center
+.cart-menu__item-wrap
+    width 32%
+    background-color white
+    border 1px solid #707070
+    margin 0 0 20px 1%
+    +adapt(768px)
+        width 70%
+    +adapt(480px)
+        width 100%
+.cart-menu__item
+    padding 50px
+.cart-menu_title-link
+    font(HN-B, #45286F, 30px)
+    line-height 1.1
+    +adapt(1440px)
+        font-size 24px
+.cart-menu_descr
+    font(HN, #535353, 20px)
+    margin-top 20px
+    +adapt(1440px)
+        font-size 18px
+.cart-menu-link
+    display flex
+    justify-content flex-end
+    font(HN, #C269EF, 20px)
+    margin-top 20px
+    text-decoration underline
+    tran()
+    &:hover
+        color #45286F
+    +adapt(1200px)
+        font-size 18px
+.blog
+    margin-top 100px
+.home__item-blog
+    display flex
+    justify-content space-between
+    padding 10px 10px 80px
+
+    +adapt(768px)
+        display block
+.h2__home-blog
+    font(HN-B, black, 80px)
+    text-align center
+    +adapt(1200px)
+        margin-top 50px
+        font-size 40px
+.home-blog__title-link
+    font(HN-B, dark, 40px)
+    line-height 1.1
+    +adapt(1200px)
+        font-size 30px
+    +adapt(7680px)
+        font-size 25px
+.home-blog_goto-link 
+    display block
+    font(HN, #C269EF, 20px)
+    margin-top 50px
+    text-decoration underline
+    tran()
+    &:hover
+        color #45286F
+    +adapt(1200px)
+        font-size 18px
+        margin-top 30px
+.blog__news_all__goto
+    display flex
+    justify-content space-between
+    align-items center
+    border-bottom 1px solid black
+    height 100px
+    margin-bottom 100px
+.news_all__shrt-txt
+    font(HN, black, 40px)
+.news_all_goto-link
+    font(HN, #C269EF, 20px)
+    text-decoration underline
+    tran()
+    &:hover
+        color #45286F
+    +adapt(1200px)
+        font-size 18px
