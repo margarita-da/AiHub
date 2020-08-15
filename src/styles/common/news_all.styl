@@ -1,0 +1,52 @@
+.news_all__item
+    margin-top 80px
+    border-bottom 1px solid #000
+    tran()
+    display none
+    &:hover
+        box-shadow: 3px 6px 23px 10px rgba(0, 0, 0, 0.15)
+        border-bottom 1px solid white
+.news_all__item-link
+    display flex
+    justify-content space-between
+    padding 10px 10px 80px
+
+    +adapt(768px)
+        display block
+.news_all__item-info
+    width 45%
+    +adapt(768px)
+        width 100%
+.news_all__item-pic
+    width 35%
+    +adapt(768px)
+        width 100%
+
+.news_all__item-date
+    font(HN-B, #C3C3C3, 14px)
+    margin-bottom 10px 
+    +adapt(1200px)
+        font-size 12px
+.news_all__item-description
+    font(HN, #535353, 20px)
+    margin-top 60px
+    +adapt(1200px)
+        margin-top 20px
+        font-size 16px
+.news_all__item-pic
+    +adapt(768px)
+        margin-top 20px
+        text-align center
+.news_all__btn-more
+    display block
+    width 200px
+    height 40px
+    border 1px solid black 
+    margin 40px auto
+    cursor pointer
+    tran()
+    font()
+    &:hover
+        background-color black
+        border 1px solid white 
+        color white
