@@ -1,7 +1,7 @@
 .wrapper 
     width 100%
-    min-height 600px
-    height 100%
+    // min-height 600px
+    // height 100%
     position relative
     z-index -15
 .maincontent 
@@ -11,11 +11,11 @@
 
 .section 
     width 100%
-    height auto
+    // height auto
     position relative
 .container 
     margin 0 auto
-    max-width: 1850px
+    max-width: 1640px
     padding-left 20px
     padding-right 20px 
     +adapt(1200px)
@@ -43,120 +43,24 @@
     justify-content center
     align-items center
 .h1__title
-    // font(Rb, 32px)
-.h2__title
-    font(RB, dark, 123px)
-    line-height 1.2
+    font(HN-B, dark, 40px)
     text-align center
-    color white
-    +adapt(1500px)
-        font-size 90px
+    +adapt(1400px)
+        font-size 25px
+    +adapt(480px)
+        font-size 20px
+.h2__title
+    font(HN-B, dark, 40px)
+    line-height 1.1
     +adapt(1200px)
-        font-size 80px
-    +adapt(550px)
-        font-size 60px
-    +adapt(400px)
-        font-size 40px
-p
-    font(SF, gray, 16px)
-    text-align left
-.minu__title
-    font(RR, gray, 16px)
-    border-bottom 1px solid dark
-    padding-bottom 16px
-
+        font-size 30px
+    +adapt(7680px)
+        font-size 25px
 .button
-    display block
-    cursor pointer
-    background-color transparent !important
-    border 1px solid black
-    overflow hidden
-    position relative
-    tran()
-    &:before,
-    &:after 
-        position absolute;
-        content ''
-        width 20px
-        height 20px
-        top 50%
-        border-radius 50%
-        z-index -1
-    &:before 
-        transform: translate(-50%, -50%);
-        left -20px
-  
-    &:after 
-        transform: translate(50%, -50%);
-        right -20px
-     &:hover 
-        letter-spacing 2px
-        &:before 
-            animation move-left .8s both
-            animation-direction alternate
-        &:after 
-            animation move-right .8s both
-.button__dark
-    position relative
-    font(RR, white, 18px)
-    &:hover
-        background-color transparent !important
-        color dark
-    &:before,
-    &:after 
-        background white
-    span
-        display block
-        position absolute
-        width 100%
-        height 100%
-        top 0
-        left 0
-        background-color dark
-        z-index: -2
-.button__white
-    background-color transparent !important
-    font(RR, dark, 18px)
-    &:hover 
-        color white  
-    &:before,
-    &:after 
-        background: dark
-@keyframes move-left {
-  0% {
-    left: -20px;
-  }
-  50% {
-    left: 50%;
-    width: 20px;
-    height: 20px;
-  }
-  100% {
-    left: 50%;
-    height: 400px;
-    width: 400px;
-  }
-}
-
-@keyframes move-right {
-  0% {
-    right: -20px;
-  }
-  50% {
-    right: 50%;
-    width: 20px;
-    height: 20px;
-  }
-  100% {
-    right: 50%;
-    height: 400px;
-    width: 400px;
-  }
-} 
-button
-    border none 
+    border none
     outline none 
-    background transparent
+    background-color transparent
+        
 .ya-share2__container_size_m .ya-share2__icon
     width 50px!important
     height 50px!important
