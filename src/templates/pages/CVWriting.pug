@@ -1,0 +1,14 @@
+extends ../template
+
+block variables
+    - var title = "Главная Страница"
+
+block content
+
+    include ../common/header.pug
+    h1.h1__title Professional CV Writing Services
+    include ../section/section-banner.pug
+    include ../section/section-info.pug
+    include ../section/section-menu.pug
+          
+    include ../common/footer.pug
