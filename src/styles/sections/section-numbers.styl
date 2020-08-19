@@ -1,0 +1,41 @@
+.section-numbers
+    background-color #FBFBFD
+    padding 200px 0
+.numbers__list
+    display flex
+    flex-wrap wrap
+    padding 0 -1%
+    margin-top 20px
+    +adapt(768px)
+        justify-content center
+.numbers__item
+    width 32%
+    height 300px
+    margin 0 0 20px 1%
+    background-color white
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    +adapt(768px)
+        width 70%
+    +adapt(480px)
+        width 100%
+.numbers__descr
+    font(HN, #86868B, 24px)
+    text-align center
+    margin-top 20px
+    +adapt(1200px)
+        font-size 20px
+    +adapt(992px)
+        font-size 16px
+.numbers__item__num
+    font(HN-B, #45286F, 60px)
+    +adapt(1200px)
+        font-size 50px
+    +adapt(480px)
+        font-size 30px
+.numbers__item__txt
+    font(HN, black, 20px)
+    +adapt(480px)
+        font-size 16px
