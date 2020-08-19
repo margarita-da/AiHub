@@ -13,6 +13,9 @@
     cursor pointer
     margin-left auto
     margin-right auto
+    +adapt(650px)
+        width 35px
+        height 35px
 .burger 
     position absolute
     background black
@@ -33,6 +36,8 @@
     content ""
     display block
     border-radius 3px
+    +adapt(650px)
+        width 35px
 .burger::after 
     position absolute
     background black
@@ -42,6 +47,8 @@
     content ""
     display block
     border-radius 3px
+    +adapt(650px)
+        width 35px
 .burger::after, .burger::before, .burger 
     transition all .3s ease-in-out
     -webkit-transition all .3s ease-in-out
@@ -60,6 +67,17 @@
     background rgba(111,111,111,.0)
 
 .header__logo
-    max-width 220px
+    max-width 72px
     +adapt(650px)
-        max-width 150px
+        max-width 45px
+
+.header__logo__wrap
+    display flex
+    justify-content center
+    align-items center
+
+.header__logo-txt
+    font('AG', black, 47px)
+    margin-left 10px
+    +adapt(650px)
+        font-size 36px
