@@ -2,10 +2,10 @@
 // const slider = require("./common/slider");
 const btnMore = require("./common/btnMore");
 const burger = require("./common/burger");
+import AOS from "aos";
 
-// slider();
 $(document).ready(function () {
   btnMore();
   burger();
-  // slider();
+  AOS.init();
 });
