@@ -1,0 +1,21 @@
+section.section-slider
+    .container
+        h2.h2__title Case studies
+        .slider__list-wr
+            .slider__list
+                -for (var i=0; i<3; i++) {
+                    .slider__item
+                        .slider-img_wrap
+                            img.slider__img(src=`http://placehold.it/810x45${i}` )
+                            
+                -}
+            .slider-button-wr
+                //- button.slider-button-next  &rarr;
+                //- button.slider-button-prev &larr;
+        .slider-descr__list
+            -for (var i=0; i<3; i++) {          
+                .slider-descr__item
+                    h1 Name projects
+                    p lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
+                    p lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun
+            - }

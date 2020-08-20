@@ -1,0 +1,75 @@
+.section-menu
+    padding 200px 0
+    background-color #FBFBFD
+    +adapt(1440px)
+        padding 100px 0
+    +adapt(768px)
+        padding 100px 0
+.menu__list
+    display flex
+    justify-content space-between
+    margin-top 60px
+    +adapt(768px)
+        flex-wrap wrap
+        justify-content center
+.menu__item__link
+    display block
+    width 30%
+    box-shadow: 2px -2px 17px -4px rgba(0,0,0,0.75);
+    tran()
+    +adapt(768px)
+        width 80%
+        margin-top 40px
+        &:first-child
+            margin-top 0
+    +adapt(480px)
+        width 100%
+    &:hover
+        box-shadow none
+.menu__pic
+    img
+        display block
+        width 100%
+.menu__text
+    background-color white
+    padding 40px
+    display flex
+    justify-content space-between
+    align-items center
+    +adapt(1440px)
+        padding 20px
+    +adapt(992px)
+        display block
+.menu__text__shrt-txt
+    width 50%
+.menu__text__learn-more
+    width 50%
+    display flex
+    justify-content flex-end
+    align-items center
+    +adapt(992px)
+        width 100%
+        justify-content flex-start
+        margin-top 10px
+.menu__text__shrt-txt
+    font(HN-B, dark, 25px)
+    +adapt(1440px)
+        font-size 20px
+    +adapt(992px)
+        font-size 18px
+        width 100%
+        
+.menu__text__learn-more-txt
+    margin-right 10px
+    font(HN, #535353, 18px)
+    +adapt(1440px)
+        font-size 16px
+    +adapt(992px)
+        font-size 14px
+.menu__text__learn-more-pic
+    display block
+    width 40px
+    height 40px
+    +adapt(1440px)
+        width 30px
+        height 30px
