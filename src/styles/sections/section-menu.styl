@@ -1,25 +1,30 @@
 .section-menu
     padding 200px 0
     background-color #FBFBFD
+    position relative
+    overflow hidden
     +adapt(1440px)
         padding 100px 0
     +adapt(768px)
         padding 100px 0
 .menu__list
     display flex
-    justify-content space-between
-    margin-top 60px
+    flex-wrap wrap
+    justify-content center
+    margin 60px -40px 0 0
     +adapt(768px)
-        flex-wrap wrap
-        justify-content center
+        margin-right 0
 .menu__item__link
     display block
     width 30%
+    margin-right 40px
+    margin-bottom 30px
     box-shadow: 2px -2px 17px -4px rgba(0,0,0,0.75);
     tran()
     +adapt(768px)
         width 80%
         margin-top 40px
+        margin-right 0
         &:first-child
             margin-top 0
     +adapt(480px)
