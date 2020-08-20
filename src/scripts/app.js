@@ -1,5 +1,5 @@
 import "slick-carousel";
-const slider = require("./common/slider");
+// const slider = require("./common/slider");
 const btnMore = require("./common/btnMore");
 const burger = require("./common/burger");
 
@@ -7,5 +7,5 @@ const burger = require("./common/burger");
 $(document).ready(function () {
   btnMore();
   burger();
-  slider();
+  // slider();
 });
