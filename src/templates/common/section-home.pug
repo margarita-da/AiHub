@@ -1,18 +1,18 @@
 .home
     .container
         section.first-screen
-            .first-screen__info
+            .first-screen__info(data-aos="fade-up")
                 h1.first-screen__info-h1__title Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod 
                 h2.first-screen__info-h2__title We are a ​
                 .first-screen__info-description 
                     p lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In est ante in nibh mauris.
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In est ante in nibh mauris.
-            .first-screen__pic
+            .first-screen__pic(data-aos="fade-up")
                 img(src="https://via.placeholder.com/872x593", alt="")
         section.cart-menu
             .cart-menu__list
                 -for(let i=0; i< 8;i++){
-                    .cart-menu__item-wrap
+                    .cart-menu__item-wrap(data-aos="fade-up")
                         .cart-menu__item
                             a(href="#").cart-menu_title-link Professional CV Writing Services
                             .cart-menu_descr Professional CV Writing & Rewriting Services - HR Resume Writer
@@ -22,7 +22,7 @@
             h2.h2__home-blog Blog
             .news_all__list
                 -for(let x=0; x < 2; x++){
-                    .news_all__item.home__item-blog
+                    .news_all__item.home__item-blog(data-aos="zoom-out-up")
                         .news_all__item-info
                             .news_all__item-date 11 August 2020
                             a(href="#").home-blog__title-link Tincidunt arcu non sodales neque sodales.
@@ -32,6 +32,6 @@
                             img(src="https://via.placeholder.com/640x360", alt="")
                         
                 - }
-            .blog__news_all__goto
+            .blog__news_all__goto(data-aos="zoom-out-up")
                 .news_all__shrt-txt All news
                 a(href="#").news_all_goto-link Go to
