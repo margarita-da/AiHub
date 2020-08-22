@@ -1,0 +1,136 @@
+.section-consultants
+    padding 250px 0
+    +adapt(992px)
+        padding 150px 0
+.consultants__list
+    display flex
+    flex-wrap wrap
+    margin-top 40px
+    margin-right -15px
+    margin-left -15px
+.consultants__item
+    flex 0 0 25%
+    width 25%
+    padding-right 15px
+    padding-left 15px
+    margin-bottom 20px
+    cursor pointer
+    perspective 400px
+    +adapt(1440px)
+        flex 0 0 33%
+        width 33%
+    +adapt(992px)
+        flex 0 0 50%
+        width 50%
+    +adapt(480px)
+        flex 0 0 100%
+        width 100%
+.consultants__cart
+    position relative
+.consultants__name
+    position absolute
+    bottom 20px
+    left 30px
+    line-height 1.1
+    font(HN, white, 32px)
+    +adapt(1200px)
+        font-size 25px
+.consultants__content
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color white
+    padding 20px
+    
+.consultants__content__name-name,
+.consultants__content__name-surname
+    font(HN-B, black, 32px)
+    line-height 1.1
+.consultants__content__item
+    margin-top 10px
+.consultants__content__shrt-txt
+    font(HN-B, #45286F, 16px)
+.consultants__content__descr
+    font(HN, #717171, 16px)
+
+.info {
+  // hide-initial-state
+  transform: rotate3d(1,0,0, 90deg);
+  
+  width: 100%;
+  height: 100%;
+//   padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  pointer-events: none;
+//   background-color: transparentize($turquoise, .1);
+}
+duration= 300ms
+timing-fn= ease
+turquoise= #1ABC9C
+wet-asphalt= #34495E
+midnight-blue= #2C3E50
+clouds: #ECF0F1
+.in-top .info {
+   transform-origin: 50% 0%;
+   animation: in_top duration timing-fn 0ms 1 forwards;
+}
+.in-right .info {
+  transform-origin: 100% 0%;
+  animation: in_right duration timing-fn 0ms 1 forwards;
+}
+.in-bottom .info {
+  transform-origin: 50% 100%;
+  animation: in_bottom duration timing-fn 0ms 1 forwards;
+}
+.in-left .info {
+  transform-origin: 0% 0%;
+  animation: in_left duration timing-fn 0ms 1 forwards;
+}
+
+.out-top .info {
+  transform-origin: 50% 0%;
+  animation: out_top duration timing-fn 0ms 1 forwards;
+}
+.out-right .info {
+  transform-origin: 100% 50%;
+  animation: out_right duration timing-fn 0ms 1 forwards;
+}
+.out-bottom .info {
+  transform-origin: 50% 100%;
+  animation: out_bottom duration timing-fn 0ms 1 forwards;
+}
+.out-left .info {
+  transform-origin: 0% 0%;
+  animation: out_left duration timing-fn 0ms 1 forwards;
+}
+
+@keyframes in_top {
+  from {transform: rotate3d(-1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in_right {
+  from {transform: rotate3d(0,-1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in_bottom {
+  from {transform: rotate3d(1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in_left {
+  from {transform: rotate3d(0,1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+
+@keyframes out_top {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(-1,0,0, 117deg)}}
+@keyframes out_right {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,-1,0, 115deg)}}
+@keyframes out_bottom {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(1,0,0, 117deg)}}
+@keyframes out_left {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,1,0, 115deg)}}
