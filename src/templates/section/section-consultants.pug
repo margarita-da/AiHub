@@ -1,0 +1,22 @@
+section.section-consultants.bg-color
+    h2.h2__title-info(data-aos="fade-up") Our HR Consultants
+    .container
+        .consultants__list
+            -for(let i=0; i< 5;i++){
+                .consultants__item(data-aos="fade-up")
+                    .consultants__cart
+                        .consultants__pic
+                            img(src="assets/images/aaa.png")
+                        .consultants__name
+                            .consultants__name-name Evgenia
+                            .consultants__name-surname Konovalova
+                        .consultants__content.info
+                            .consultants__content__name-name Evgenia
+                            .consultants__content__name-surname Konovalova
+                            .consultants__content__position CEO
+                            -for(let i=0; i<3; i++) {
+                                .consultants__content__item
+                                    .consultants__content__shrt-txt Short bio
+                                    .consultants__content__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            -}
+            -}
