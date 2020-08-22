@@ -1,0 +1,48 @@
+.section-headhunters
+    padding 150px 0
+    +adapt(992px)
+        padding 100px 0
+.headhunters__list
+    display flex
+    flex-wrap wrap
+    margin-right -15px
+    margin-left -15px
+    margin-top 50px
+.headhunters__item
+    flex 0 0 25%
+    width 25%
+    padding-right 15px
+    padding-left 15px
+    position relative
+    tran()
+    &:hover
+        transform translateY(-10px)
+    +adapt(1200px)
+        flex 0 0 50%
+        width 50%
+    +adapt(480px)
+        flex 0 0 100%
+        width 100%
+.headhunters__cart
+    margin-bottom 30px
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.75);
+.headhunters__pic
+    img 
+        display block
+        width 100%
+.h3-headhunters
+    font(HN-B, #45286F, 32px)
+    +adapt(1200px)
+        font-size 26px
+    +adapt(480px)
+        font-size 22px
+.headhunters__descr
+    padding 30px 20px
+
+.headhunters__shrt-txt
+    background-color white
+    font(HN, #717171, 24px)
+    +adapt(1200px)
+        font-size 16px
+    +adapt(768px)
+        font-size 14px
