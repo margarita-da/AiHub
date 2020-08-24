@@ -1,9 +1,14 @@
 function burger() {
   $(".burger-menu").click(function () {
-    $(this).toggleClass("menu-on");
+    // $(this).toggleClass("menu-on");
     $(".menu").toggleClass("menu-active");
-    $(".header").toggleClass("header-menu");
-    $(".wrapper-bckg").toggleClass("wrapper-bckg-menu");
+    $(".burger-menu").hide();
+    $(".menu-close").toggleClass("menu-close-active");
+  });
+  $(".menu-close, .block__menu__close").on("click", function () {
+    $(".burger-menu").show();
+    $(".menu-close").toggleClass("menu-close-active");
+    $(".menu").toggleClass("menu-active");
   });
 }
 function init() {
