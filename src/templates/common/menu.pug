@@ -1,0 +1,24 @@
+.menu
+    .menu-wrap
+        nav.menu__nav__list
+            -for(let i=0; i<7; i++) {
+                a(href="#").menu__nav__item-link
+                    .menu__nav__item-wr
+                        .menu__nav__item-link__txt Professional CV Writing Services
+                        .menu__nav__item-link__arrow
+                            img(src="assets/images/arrow.png", alt="")
+            -}
+            a(href="#").menu__nav__item-link
+                    .menu__nav__item-wr
+                        .menu__nav__item-link__txt Professional 
+                        .menu__nav__item-link__arrow
+                            img(src="assets/images/arrow.png", alt="")
+        .menu__bottom
+            .menu__bottom__contact
+                a.menu__contacts-link(href="tel:+1(310)957-4930") +1 (310) 957-4930
+                a.menu__contacts-link(href="mailto:konovalova@sci-guide.com") konovalova@sci-guide.com
+            .menu__bottom__social
+                .menu__bottom__social-txt Social networks
+                svg.menu__bottom__social-icon
+                    use(xlink:href="assets/sprite/sprite.svg#facebook")
+

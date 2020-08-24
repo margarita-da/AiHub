@@ -1,11 +1,17 @@
 .header
     width 100%
+    position relative
+    z-index 20
+.header-menu
+    position fixed
+    top 0
+    left 0
 .header__container
-    padding 30px 25px
+    // padding 30px 25px
     display flex
     justify-content space-between
     align-items center
-
+    height 150px
 .burger-menu 
     position relative
     width 50px
@@ -13,6 +19,7 @@
     cursor pointer
     margin-left auto
     margin-right auto
+    z-index 20
     +adapt(650px)
         width 35px
         height 35px
