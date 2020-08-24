@@ -5,9 +5,9 @@
     width 100%
     height 100%
     background-color rgba(#fff, 0.9)
+    overflow auto
     opacity 0
     z-index -10
-    overflow auto
     tran()
  .menu-active
     opacity 1
@@ -19,21 +19,13 @@
     transform translateX(-50%)
     background-color white
     box-shadow 0px -1px 5px 0px rgba(0,0,0,0.75)
-    padding 80px 0 0
+    padding 60px 0 0
     width 1000px
-    z-index 20
+    overflow hidden
     +adapt(1200px)
         width 80%
     +adapt(992px)
         width 95%
-    
-.menu-wrap-bg
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    overflow hidden
     &:after
         content ''
         position absolute
@@ -46,45 +38,15 @@
         right -100px
         z-index -10
         opacity 0.3
-.menu-close
-    position fixed
-    top -80px
-    right -400px
-    tran()
-
-.menu-close-active
-    top -80px
-    right -40px
-    z-index 30
-    cursor pointer
-    +adapt(992px)
-        right 40px
-.block__menu__close
-    width 100%
-    height 100%
-    position absolute
-    z-index 0
-.menu-close__line1
-    background-color #a716e7
-    width 40px
-    height 7px
-    border-radius 6px
-    transform rotate(45deg)
-    position:absolute
-.menu-close__line2
-    background-color #2560E5
-    width 40px
-    height 7px
-    border-radius 6px
-    transform rotate(-45deg)
-    position absolute
 .menu__nav__list
-    display flex
-    flex-wrap wrap
-    padding 0 30px
-    margin-right -15px
-    margin-left -15px
-.menu__nav__item-link
+    &>ul
+        display flex
+        flex-wrap wrap
+        padding 0 30px
+        margin-right -15px
+        margin-left -15px
+.menu__nav__item-link,
+.page_item
     flex 0 0 25%
     width 25%
     padding-right 15px
@@ -100,11 +62,13 @@
         flex 0 0 100%
         width 100% 
     &:hover
-        .menu__nav__item-wr
+        .menu__nav__item-wr,
+        .menu-item
             background rgba(#fff, 0.7);
             box-shadow 0px -1px 5px 0px rgba(0,0,0,0.75)
 
 .menu__nav__item-wr
+
     background: #fff;
     margin-bottom 30px
     position: relative;
@@ -169,3 +133,27 @@
     width 20px
     height 20px
     fill white
+
+.page_item
+    &>a
+        background: #fff;
+        margin-bottom 30px
+        position: relative;
+        border-radius 5px
+        padding 10px
+        height 100px
+        display flex
+        flex-direction column
+        justify-content space-between
+        width 100%
+        tran()
+        &:after
+            border-radius 10px
+            content: "";
+            position: absolute;
+            top: -4px;
+            bottom: -4px;
+            left: -4px;
+            right: -4px;
+            z-index: -1;
+            background-image: linear-gradient(to bottom, #8b44f5, #4776ff, #0096ff, #00afff, #58c4f5);
