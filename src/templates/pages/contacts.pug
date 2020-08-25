@@ -1,0 +1,11 @@
+extends ../template
+
+block variables
+    - var title = "Контакты Страница"
+
+block content
+
+    include ../common/header.pug
+    h1.h1__title(data-aos="zoom-in") CV Consulting Services
+    include ../section/section-map-contacts.pug
+    include ../common/footer.pug
