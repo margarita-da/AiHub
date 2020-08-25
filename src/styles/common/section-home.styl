@@ -109,7 +109,7 @@
     display flex
     justify-content space-between
     padding 10px 10px 80px
-
+    align-items center
     +adapt(768px)
         display block
 .h2__home-blog
@@ -153,3 +153,48 @@
         color #45286F
     +adapt(1200px)
         font-size 18px
+
+//menu wordpress
+.cart-menu
+    .menu-item
+        width 32%
+        background-color white
+        // border 1px solid #707070
+        box-shadow 0px -1px 5px 0px rgba(0,0,0,0.75)
+        padding 50px
+        margin 0 0 20px 1%
+        position relative
+        +adapt(768px)
+            width 70%
+        +adapt(480px)
+            width 100%
+        &>a
+            font(HN-B, #45286F, 30px)
+            line-height 1.1
+            padding 0
+            +adapt(1440px)
+                font-size 24px  
+            &:after,
+            &:before
+                display none
+        span.description        
+            font(HN, #535353, 20px)
+            margin-top 20px
+            +adapt(1440px)
+                font-size 18px
+        &:after
+            content: "Go over";
+            position: absolute;
+            display: block
+            width 78px
+            // height 15px
+            right: 50px
+            bottom: 50px
+            font(HN, #C269EF, 20px)
+            text-decoration underline
+            tran()
+            background none
+            &:hover
+                color #45286F
+            +adapt(1200px)
+                font-size 18px
