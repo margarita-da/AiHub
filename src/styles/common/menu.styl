@@ -39,14 +39,14 @@
         z-index -10
         opacity 0.3
 .menu__nav__list
-    &>ul
-        display flex
-        flex-wrap wrap
-        padding 0 30px
-        margin-right -15px
-        margin-left -15px
+    // &>ul
+    display flex
+    flex-wrap wrap
+    padding 0 30px
+    margin-right -15px
+    margin-left -15px
 .menu__nav__item-link,
-.page_item
+.menu-item
     flex 0 0 25%
     width 25%
     padding-right 15px
@@ -134,8 +134,9 @@
     height 20px
     fill white
 
-.page_item
+.menu-item
     &>a
+        font(HN-B, dark, 18px)
         background: #fff;
         margin-bottom 30px
         position: relative;
@@ -148,6 +149,15 @@
         width 100%
         tran()
         &:after
+            content: "";
+            position: absolute;
+            display: block
+            background-image: url(../images/arrow.png)
+            width 19px
+            height 15px
+            right: 10px
+            bottom: 10px
+        &:before
             border-radius 10px
             content: "";
             position: absolute;
