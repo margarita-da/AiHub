@@ -9,7 +9,9 @@
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In est ante in nibh mauris.
             .first-screen__pic(data-aos="fade-up")
                 img(src="https://via.placeholder.com/872x593", alt="")
-        section.cart-menu
+        include ../common/scroll.pug
+
+        section.cart-menu#cart-menu
             .cart-menu__list
                 -for(let i=0; i< 8;i++){
                     .cart-menu__item-wrap(data-aos="fade-up")
