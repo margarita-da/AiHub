@@ -174,27 +174,26 @@
             padding 0
             +adapt(1440px)
                 font-size 24px  
-            &:after,
+            &:after
+                content: "Go over";
+                position: absolute;
+                display: block
+                width 78px
+                // height 15px
+                right: -20px
+                bottom: -30px
+                font(HN, #C269EF, 20px)
+                text-decoration underline
+                tran()
+                background none
+                &:hover
+                    color #45286F
+                +adapt(1200px)
+                    font-size 18px
             &:before
                 display none
         span.description        
             font(HN, #535353, 20px)
             margin-top 20px
             +adapt(1440px)
-                font-size 18px
-        &:after
-            content: "Go over";
-            position: absolute;
-            display: block
-            width 78px
-            // height 15px
-            right: 50px
-            bottom: 50px
-            font(HN, #C269EF, 20px)
-            text-decoration underline
-            tran()
-            background none
-            &:hover
-                color #45286F
-            +adapt(1200px)
                 font-size 18px
