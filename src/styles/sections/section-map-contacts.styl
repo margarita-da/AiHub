@@ -25,6 +25,29 @@
 .map__right__contacts-light
     font(HN, #535353, 16px)
     text-align center
+.scroll-wrap
+    margin-top 20px
+    text-align center
+.scroll
+    position absolute
+    display inline-block
+    width 60px
+    height 60px
+    animation 2s ease-in up-down infinite
+    +adapt(768px)
+        display none
+    img
+        display block
+        cursor pointer
+
+@keyframes up-down
+    0%
+        transform translateY(-10px)
+    50% 
+        transform translateY(10px)
+    100%
+        transform translateY(-10px)
+  
 
 
 
