@@ -129,6 +129,7 @@
     align-items center
 .menu__bottom__social-txt
     font(HN, white, 12px)
+    margin-right 10px
 .menu__bottom__social-icon
     width 20px
     height 20px
@@ -167,3 +168,30 @@
             right: -4px;
             z-index: -1;
             background-image: linear-gradient(to bottom, #8b44f5, #4776ff, #0096ff, #00afff, #58c4f5);
+.block__menu__close
+    width 100%
+    height 100%
+    z-index 20
+
+.menu-close__line1
+    background-color #a716e7
+    width 32px
+    height 8px
+    border-radius 5px
+    transform rotate(45deg)
+    position:absolute
+.menu-close__line2    
+    background-color #2560E5
+    width 32px
+    height 8px
+    border-radius 5px
+    transform rotate(-45deg)
+    position absolute
+.menu-close
+    position absolute
+    top 80px
+    right -800px
+    tran()
+.menu-close-active
+    right 80px
+    cursor pointer
