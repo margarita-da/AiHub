@@ -22,6 +22,9 @@
 .mb-100
     margin 0 auto
     margin-bottom 100px
+.mb-50
+    margin 0 auto
+    margin-bottom 50px
 .pulsator
     width 200px
     height 200px
@@ -40,10 +43,12 @@
     height 100%
     border-radius 50%
     background-color #a716e7
-    animation: puls 1.5s ease-out infinite normal
+    opacity 0
+    &:hover
+        opacity 1
+        animation: puls 1.5s ease-out infinite normal
 .pulsator_txt
-    font(HN, white, 24px)
-    text-decoration underline
+    font(HN-B, white, 24px)
 .block-form
     position fixed
     z-index -10
