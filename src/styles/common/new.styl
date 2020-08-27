@@ -1,0 +1,199 @@
+.menu
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba(#fff, 0.9)
+    overflow auto
+    opacity 0
+    z-index -10
+    tran()
+ .menu-active
+    opacity 1
+    z-index 10   
+.menu-wrap
+    position absolute
+    left 50%
+    top 150px
+    transform translateX(-50%)
+    background-color white
+    box-shadow 0px 3px 26px 0px rgba(0,0,0,0.066)
+    border 1px solid #EFEFEF
+    padding 60px 0 0
+    width 1000px
+    overflow hidden
+    +adapt(1200px)
+        width 80%
+    +adapt(992px)
+        width 95%
+    &:after
+        content ''
+        position absolute
+        background url(../images/plastic-bg.png) center / contain no-repeat
+        display block
+        width 800px
+        height 800px
+        // top 0
+        top -100px
+        right -100px
+        z-index -10
+        opacity 0.3
+.menu__nav__list
+    // &>ul
+    display flex
+    flex-wrap wrap
+    padding 0 30px
+    margin-right -15px
+    margin-left -15px
+.menu__nav__item-link,
+.menu-item
+    flex 0 0 25%
+    width 25%
+    padding-right 15px
+    padding-left 15px
+    display block
+    +adapt(1200px)
+        flex 0 0 33%
+        width 33%
+    +adapt(900px)
+        flex 0 0 50%
+        width 50%
+    +adapt(530px)
+        flex 0 0 100%
+        width 100% 
+    &:hover
+        .menu__nav__item-wr,
+        .menu-item
+            background rgba(#fff, 0.7);
+            box-shadow 0px -1px 5px 0px rgba(0,0,0,0.75)
+
+.menu__nav__item-wr
+
+    background: #fff;
+    margin-bottom 30px
+    position: relative;
+    border-radius 5px
+    padding 10px
+    height 100px
+    display flex
+    flex-direction column
+    justify-content space-between
+    width 100%
+    tran()
+    &:after
+        border-radius 10px
+        content: "";
+        position: absolute;
+        top: -4px;
+        bottom: -4px;
+        left: -4px;
+        right: -4px;
+        z-index: -1;
+        background-image: linear-gradient(to bottom, #8b44f5, #4776ff, #0096ff, #00afff, #58c4f5);
+
+.menu__nav__item-link__txt
+    font(HN-B, dark, 18px)
+    
+.menu__nav__item-link__arrow
+    img
+        display block
+        margin-left auto
+.menu__bottom
+    width 100%
+    height 60px
+    background: linear-gradient(.25turn,#6200ff,#a716e7,#4f33c8,#2560e5,#00c7ff);
+    margin-top 100px
+    padding 0 30px
+    display flex
+    align-items center
+    justify-content space-between
+    +adapt(515px)
+        flex-direction column
+        justify-content center
+        height auto
+        padding 20px 0
+.menu__contacts-link
+    font(HN-B, white, 20px)
+    &:first-child
+        margin-right 20px
+        +adapt(515px)
+            margin-right 0
+            text-align center
+    +adapt(768px)
+        display block 
+    +adapt(515px)
+        font-size 14px
+        margin-bottom 10px
+.menu__bottom__social
+    display flex
+    align-items center
+.menu__bottom__social-txt
+    font(HN, white, 12px)
+    margin-right 10px
+.menu__bottom__social-icon
+    width 20px
+    height 20px
+    fill white
+
+.menu-item
+    &>a
+        font(HN-B, dark, 18px)
+        background: #fff;
+        margin-bottom 30px
+        position: relative;
+        border-radius 5px
+        padding 10px
+        height 100%
+        display flex
+        flex-direction column
+        justify-content center
+        width 100%
+        tran()
+        &:after
+            content: "";
+            position: absolute;
+            display: block
+            background-image: url(../images/arrow.png)
+            width 19px
+            height 15px
+            right: 10px
+            bottom: 10px
+            margin-bottom 20px
+        &:before
+            border-radius 6px
+            content: "";
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
+            z-index: -1;
+            background-image: linear-gradient(to bottom, #8b44f5, #4776ff, #0096ff, #00afff, #58c4f5);
+.block__menu__close
+    width 100%
+    height 100%
+    z-index 20
+
+.menu-close__line1
+    background-color black
+    width 44px
+    height 4px
+    border-radius 5px
+    transform rotate(45deg)
+    position:absolute
+.menu-close__line2    
+    background-color black
+    width 44px
+    height 4px
+    border-radius 5px
+    transform rotate(-45deg)
+    position absolute
+.menu-close
+    position absolute
+    top 80px
+    right -800px
+    tran()
+.menu-close-active
+    right 80px
+    cursor pointer

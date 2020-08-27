@@ -4,16 +4,18 @@
     overflow hidden
     &:after
         content ""
-        background-image url("../images/aqua.png")
-        width 2200px
-        height 2600px
+        background-image url("../images/plastic-bg.png")
+        width 3210px
+        height 4500px
         position absolute
-        top -900px
+        top -2865px
         right -900px
         z-index -10
+        +adapt(1200px)
+            right -1200px
         +adapt(768px)
-            top -1300px
-            right -1400px
+            right -1600px
+            height 6000px
 // .wrapper-bckg-menu
 //     padding-top 150px
 .first-screen
@@ -158,6 +160,7 @@
 //menu wordpress
 .cart-menu
     .menu-item
+        cursor pointer
         width 32%
         background-color white
         // border 1px solid #707070
@@ -170,6 +173,9 @@
             width 70%
         +adapt(480px)
             width 100%
+        tran()
+        &:hover
+            box-shadow none
         &>a
             font(HN-B, #45286F, 30px)
             line-height 1.1

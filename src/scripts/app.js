@@ -4,6 +4,7 @@ const btnMore = require("./common/btnMore");
 const burger = require("./common/burger");
 const clickForm = require("./common/clickForm");
 const scrollDown = require("./common/scrollDown");
+const btnUp = require("./common/btnUp");
 import AOS from "aos";
 
 $(document).ready(function () {
@@ -12,4 +13,5 @@ $(document).ready(function () {
   clickForm();
   scrollDown();
   AOS.init();
+  btnUp();
 });
