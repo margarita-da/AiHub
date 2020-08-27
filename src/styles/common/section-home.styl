@@ -169,6 +169,8 @@
         padding 50px
         margin 0 0 15px 1%
         position relative
+        +adapt(900px)
+            width 49%
         +adapt(768px)
             width 70%
         +adapt(480px)
@@ -180,6 +182,8 @@
             font(HN-B, #45286F, 30px)
             line-height 1.1
             padding 0
+            height 100%
+            justify-content center !important
             +adapt(1440px)
                 font-size 24px  
             &:after
@@ -194,6 +198,7 @@
                 text-decoration underline
                 tran()
                 background none
+                margin-bottom 20px
                 &:hover
                     color #45286F
                 +adapt(1200px)
