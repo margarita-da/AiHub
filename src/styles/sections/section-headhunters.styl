@@ -2,12 +2,14 @@
     padding 150px 0
     +adapt(992px)
         padding 100px 0
+    +adapt(480px)
+        padding 70px 0
 .headhunters__list
     display flex
     flex-wrap wrap
     margin-right -15px
     margin-left -15px
-    margin 50px
+    margin 50px 0
 .headhunters__item
     flex 0 0 25%
     width 25%
@@ -43,6 +45,8 @@
 .headhunters__shrt-txt
     background-color white
     font(HN, #717171, 24px)
+    +adapt(1440px)
+        font-size 18px
     +adapt(1200px)
         font-size 16px
     +adapt(768px)
