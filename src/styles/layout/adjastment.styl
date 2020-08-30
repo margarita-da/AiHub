@@ -12,6 +12,8 @@ html, body
     width 100%
     position relative
     overflow hidden
+    overflow-y scroll 
+    -webkit-overflow-scrolling touch
 .maincontent 
     width 100%
     position relative
@@ -56,6 +58,7 @@ html, body
         font-size 35px
     +adapt(480px)
         font-size 30px
+        padding 0 25px
 .h2__title
     font(HN-B, dark, 40px)
     line-height 1.1
@@ -64,6 +67,8 @@ html, body
         font-size 30px
     +adapt(768px)
         font-size 25px
+    +adapt(480px)
+        padding 0 25px
 .button
     border none
     outline none 

@@ -2,6 +2,8 @@
     padding 150px 0
     +adapt(992px)
         padding 100px 0
+    +adapt(480px)
+        padding 70px 0
 .hackathons__list
     display flex
     flex-wrap wrap
@@ -28,6 +30,12 @@
     box-shadow 0px 3px 26px 0px rgba(0,0,0,0.06)
     border 1px solid #EFEFEF
     margin 0 auto
+    +adapt(768px)
+        margin-top 30px !important
+        &:first-child
+            margin-top 0
+    +adapt(480px)
+        margin-top 20px !important
 .hackathons__pic
     img 
         display block
