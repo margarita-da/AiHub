@@ -5,6 +5,7 @@
     &:after
         content ""
         background-image url("../images/aqua2.png")
+        background-repeat no-repeat
         width 2010px
         height 3000px
         position absolute
@@ -84,6 +85,8 @@
         width 100%
 .cart-menu__item
     padding 50px
+    +adapt(480px)
+        padding 30px
 .cart-menu_title-link
     font(HN-B, #45286F, 30px)
     line-height 1.1
