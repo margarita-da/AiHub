@@ -5,7 +5,6 @@ function burger() {
       .getBoundingClientRect();
     const left = distance.left;
     const top = distance.top;
-    console.log(left, top);
     // $(this).toggleClass("menu-on");
     $(".menu").toggleClass("menu-active");
     $(".burger-menu").hide();

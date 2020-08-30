@@ -6,15 +6,14 @@ const clickForm = require("./common/clickForm");
 const scrollDown = require("./common/scrollDown");
 const btnUp = require("./common/btnUp");
 const scrolliphone = require("./common/scrolliphone");
-import AOS from "aos";
+// import AOS from "aos";
 
 $(document).ready(function () {
   btnMore();
   burger();
   clickForm();
   scrollDown();
-  AOS.init();
+  // AOS.init();
   btnUp();
-  scrolliphone();
+  // scrolliphone();
 });
-

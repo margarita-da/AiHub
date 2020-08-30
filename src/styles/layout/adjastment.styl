@@ -1,9 +1,18 @@
+html, body
+   
+    overflow-y scroll !important
+    -webkit-overflow-scrolling touch !important
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
 .wrapper 
     width 100%
     position relative
     overflow hidden
-    overflow-y scroll 
-    -webkit-overflow-scrolling touch
+   
 .maincontent 
     width 100%
     position relative
