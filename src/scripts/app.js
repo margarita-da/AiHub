@@ -5,6 +5,7 @@ const burger = require("./common/burger");
 const clickForm = require("./common/clickForm");
 const scrollDown = require("./common/scrollDown");
 const btnUp = require("./common/btnUp");
+const scrolliphone = require("./common/scrolliphone");
 import AOS from "aos";
 
 $(document).ready(function () {
@@ -14,4 +15,6 @@ $(document).ready(function () {
   scrollDown();
   AOS.init();
   btnUp();
+  scrolliphone();
 });
+
